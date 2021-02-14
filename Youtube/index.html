@@ -1,496 +1,383 @@
 <html>
-    <head>
-        <title>Youtube clone</title>
-        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,900&display=swap" rel="stylesheet">
-    
-            
-
-        <link href="css/style.css" rel="stylesheet">
-    </head>
-    <body>
-       <header class="searchbar flex  justify-between mt-5">
-           <div class="flex ml-4">
-                <a href="#"><i class="material-icons">menu</i></a>
-                <a href="#" class="pl-7"><img src="images/header/yt.svg" ></a>
-           </div>
-           <div class="search">
-               <form class="flex">
-                   <input type="text" class="w-96 border border-black pl-2 h-7" placeholder="Search">
-                   <button class="bg-gray-100 w-14 p-1 h-7"><i class="material-icons border-0  ">search</i></button>
-               </form>
-           </div>
-           
-           <div class=" flex  space-x-5 t">
-               <a href="#"><img src="images/header/Create.svg"></a>
-               <a href="#" class="cursor-pointer"><i class="material-icons cursor-pointer" >notifications</i></a>
-               <a href="#" class="cursor-pointer"><i class="material-icons ">apps</i></a>
-               <a href="#"><img src="images/header/Profile Photo.svg" ></a>
-           </div>
-        </header>
-        
-        <section class="flex">
-            <sidebar class="w-52 bg-white mt-5 text-sm">
-              <firstbar>
-                 <div class="flex bg-gray-100">
-                   <a href="#" class="flex pt-2 pb-2"><i class="material-icons  pl-6 text-red">home</i><p class="pl-6 home">Home</p></a>
-                 </div>
-                 <div class="flex pl-7">
-                    <a href="#" class="flex pt-2 pb-2"><i class="material-icons">local_fire_department</i><p class="pl-6">Trending</p></a>
-                 </div>
-                 <div class="flex pl-7 ">
-                    <a href="#" class="flex pt-2 pb-2">  <i class="material-icons text-xs">subscriptions</i><p class="pl-6">Subscriptions</p></a>
-                 </div>
-                 
-              </firstbar>
-               <!--divide class-->
-               <div class="w-48 h-0.5 bg-gray-300"></div>
-              <secondbar class="">
-                  <div class="flex  pl-7 mt-5">
-                    <a href="#" class="flex pt-2 pb-2"> <i class="material-icons small">video_library</i><p class="pl-6">Library</p></a>
-                  </div>
-                 <div class="flex ">
-                    <a href="#" class="flex pt-2 pb-2"> <img src="images/Sidebar/History.svg" class=" pl-6"><p class="pl-6">History</p></a>
-                 </div>
-                 <div class="flex">
-                    <a href="#" class="flex pt-2 pb-2"><img src="images/Sidebar/Your-Videos/Icon/Your-Videos/Default.svg" class=" pl-6"><p class="pl-6">Your Videos</p></a>
-                 </div>
-                 <div class="flex">
-                    <a href="#" class="flex pt-2 pb-2"><img src="images/Sidebar/Watch-Later/Icon/Watch-Later/Default.svg" class=" pl-6"><p class="pl-6">Watch Later</p></a>
-                 </div>
-                 <div class="flex">
-                    <a href="#" class="flex pt-2 pb-2"><img src="images/Sidebar/Liked-Videos/Icon/Liked-Videos/Default.svg" class=" pl-6"><p class="pl-6">Liked Videos</p></a>
-                 </div>
-      
-              </secondbar>
-               <!--divide class-->
-               <div class="w-48 h-0.5 bg-gray-300"></div>
-               <thirdbar>
-                  <p class="text-base pt-3 pl-7 text-gray-500 font-medium pb-5">SUBSCRIPTION</p>
-                  <div class="flex">
-                    <a href="#" class="flex pt-2 pb-2"> <img src="images/profile/Oktak.png" class=" pl-6"><p class="pl-6">Oktay Candan</p></a>
-                  
-                  </div>
-                  <div class="flex">
-                    <a href="#" class="flex pt-2 pb-2"> <img src="images/profile/Profile Photo.png"class=" pl-6"><p class="pl-6">Arnold Morrison</p> </a>
-                  
-                  </div>
-                  <div class="flex">
-                    <a href="#" class="flex pt-2 pb-2"> <img src="images/profile/Ferdi Cildiz.png" class=" pl-6"><p class="pl-6">Hudson Snyder</p></a>
-                  
-                  </div>
-                  <div class="flex ">
-                    <a href="#" class="flex pt-2 pb-2"><img src="images/profile/Thomas Burns.png"class=" pl-6"><p class="pl-6">Thomas Burns</p> </a>
-                  
-                  </div>
-                  <div class="flex pt-1 pb-3">
-                     <img src="images/profile/BrowseChannels.png"class=" pl-6"><p class="pl-6">Browse Channels</p> 
-                  
-                  </div>
-                 
-               </thirdbar>
-                <!--divide class-->
-                <div class="w-48 h-0.5 bg-gray-300"></div>
-                <fourthbar>
-                  <p class="text-base pt-3 pl-7 text-gray-500 font-medium pb-5">FROME YOUTUBE</p>
-                  <div class="flex">
-                    <a href="#" class="flex pt-2 pb-2"><img src="images/Sidebar/Icon/Youtube.svg" class=" pl-6"><p class="pl-6">Youtube Premium</p></a>
-                  </div>
-                  <div class="flex">
-                    <a href="#" class="flex pt-2 pb-2"> <img src="images/Sidebar/Icon/Gaming.svg" class=" pl-6"><p class="pl-6">Gaming</p></a>
-                 </div>
-                <div class="flex">
-                    <a href="#" class="flex pt-2 pb-2"> <img src="images/Sidebar/Icon/Live.svg" class=" pl-6"><p class="pl-6">Live</p></a>
-                </div>
-                
-                </fourthbar>
-                  <!--divide class-->
-                  <div class="w-48 h-0.5 bg-gray-300"></div>
-               <lastbar>
-                  <div class="flex mt-5">
-                    <a href="#" class="flex pt-2 pb-2"><img src="images/Sidebar/Icon/Settings.svg" class=" pl-6"><p class="pl-6">Settings</p></a>
-                  </div>
-                  <div class="flex">
-                    <a href="#" class="flex pt-2 pb-2"><img src="images/Sidebar/Icon/Report.svg" class=" pl-6"><p class="pl-6">Report History</p></a>
-                 </div>
-                <div class="flex ">
-                    <a href="#" class="flex pt-2 pb-2"><img src="images/Sidebar/Icon/Help.svg" class=" pl-6"><p class="pl-6">Help</p></a>
-                </div>
-                <div class="flex">
-                    <a href="#" class="flex pt-2 pb-2"><img src="images/Sidebar/Icon/Feedback.svg" class=" pl-6"><p class="pl-6">Send Feedback</p></a>
-               </div>
-               </lastbar>
-                <!--divide class-->
-                <div class="w-48 h-0.5 bg-gray-300"></div>
-                <p class="text-gray-300 text-base pt-7 pl-9 font-normal">&copy; 2020 Google LLC</p>
-            </sidebar>
-            <div class="videos justify-items-center">
-            <cards class=" grid grid-cols-4 -mt-20">
-               <div class="pl-4 pt-5 relative h-44">
-                  <a href="#"><img src="images/cards/Thumbnail.png"></a>
-                  
-                  <div class="absolute bg-black text-white bottom-5 h-40 pt-16 px-12 ml-40 bg-opacity-70 my-1">50+ <img src="images/cards/Play.png"></div>
-                   <a href="#"><p class="text-gray-900 font-semibold">My mix</p></a>
-                  <a href="#"><P class="text-gray-500">Hans Zimmer and more</P></a>
-               </div>
-            
-                <div class="pl-4 pt-5 relative h-44">
-                  <!--Image-->
-                  <a href="#"><img src="images/cards/Music.png"></a>
-                  <div class="absolute bg-black text-white -mt-7 text-sm ml-60 pr-1 pl-1">7:07</div>
-                  <div class="flex mt-2">
-                         <!--text-->
-                         <div>
-                        <!-- PP image-->
-                        <img src="images/cards/PP.png">
-                         </div>
-                         <a href="#">
-                         <div>
-                            <p class="text-gray-900 font-semibold ml-2 text-sm">Zack Hemsey-"The way"</p>
-                              <!--Smaller txt-->
-                              
-                              <div class="flex">
-                                 <a href="#"><p class="text-gray-500 font-semibold ml-2 text-sm mt-2">Zack Hemsey</p></a>
-                                 <a href="#"><img src="images/cards/Song.png" class="h-2.5 pl-1 mt-2.5"></a>
-                               </div>
-                               <a href="#"><p class="text-gray-500 font-semibold ml-2 text-sm">64M view. 9 years ago</p></a>
-                          </div>
-                          </a>
-                        
-                  </div>
-                  
-                      
-               </div>
-               <div class="pl-4 pt-5 relative h-44">
-                  <!--Image-->
-                 <a href="#"> <img src="images/cards/Design.png"></a>
-                  <div class="absolute bg-black text-white -mt-7 text-sm ml-60 pr-1 pl-1 mr-7">54:48</div>
-                  <div class="flex mt-2">
-                         <!--text-->
-                         <div>
-                        <!-- PP image-->
-                        <a href="#"><img src="images/cards/Design-pp.png"></a>
-                         </div>
-                         <a href="#">
-                         <div>
-                           <p class="text-gray-900 font-semibold ml-2 text-sm">Build in Figma -Create a system design component</p>
-                            <!--Smaller txt-->
-                            <p class="text-gray-500 font-semibold ml-2 text-sm mt-2">Figma</p>
-                            <p class="text-gray-500 font-semibold ml-2 text-sm">16k view  2 months ago</p>
-                        </div>
-                        </a>
-                  
-                  </div>
-                  
-                      
-               </div>
-               <div class="pl-4 pt-5 relative h-44">
-                  <!--Image-->
-                  <a href="#"><img src="images/cards/Music-piano.png"></a>
-                  <div class="absolute bg-black text-white -mt-7 text-sm ml-60 pr-1 pl-1">10:13</div>
-                  <div class="flex mt-2">
-                         <!--text-->
-                         <div>
-                        <!-- PP image-->
-                        <a href="#"><img src="images/cards/Music-PP.png"></a>
-                         </div>
-                         <a href="#">
-                         <div>
-                             <p class="text-gray-900 font-semibold ml-2 text-sm">4 Beautiful soundtracks | Relaxing piano[10 min]</p>
-                              <!--Smaller txt-->
-                              <div class="flex">
-                                 <p class="text-gray-500 font-semibold ml-2 text-sm mt-2">Jacob's Piano</p>
-                                 <img src="images/cards/Song.png" class="h-2.5 pl-1 mt-2.5">
-                               </div>
-                              <p class="text-gray-500 font-semibold ml-2 text-sm">63M views. 4 years ago</p>
-                          </div>
-                        </a>
-                  </div>
-                  
-                      
-               </div>
-               <div class="pl-4 pt-5 relative h-44">
-                  <!--Image-->
-                 <a href="#" ><img src="images/cards/Music.png"></a>
-                  <div class="absolute bg-black text-white -mt-7 text-sm ml-60 pr-1 pl-1">24:45</div>
-                  <div class="flex mt-2">
-                         <!--text-->
-                         <div>
-                        <!-- PP image-->
-                         <a href="#"><img src="images/cards/Design-pp.png"></a>
-                         </div>
-                         <a href="#">
-                         <div>
-                             <p class="text-gray-900 font-semibold ml-2 text-sm">Config Europe 2020-Keynote, Dylan Field Embracing the tension bet...</p>
-                              <!--Smaller txt-->
-                              <p class="text-gray-500 font-semibold ml-2 text-sm mt-2">Figma</p>
-                              <p class="text-gray-500 font-semibold ml-2 text-sm">27K view. 1 month ago</p>
-                          </div>
-                          </a>
-                  
-                  </div>
-                  
-                      
-               </div>
-               <div class="pl-4 pt-5 relative h-44">
-                  <!--Image-->
-                  <a href="#"><img src="images/cards/Batman.png"></a>
-                  <div class="absolute bg-black text-white -mt-7 text-sm ml-60 pr-1 pl-1">3:03</div>
-                  <div class="flex mt-2">
-                         <!--text-->
-                         <div>
-                        <!-- PP image-->
-                         <img src="images/cards/Batman-PP.png">
-                         </div>
-                         <a href="#">
-                         <div>
-                             <p class="text-gray-900 font-semibold ml-2 text-sm">The Dark Knignt rises(2012)-Batmans Sacrifice scene(9/10)..</p>
-                              <!--Smaller txt-->
-                              <div class="flex">
-                                 <p class="text-gray-500 font-semibold ml-2 text-sm mt-2">Movieclips Trailers</p><img src="images/cards/Check.png" class="h-4 mt-2">
-                              </div>
-                              <p class="text-gray-500 font-semibold ml-2 text-sm">10M views. 3 years ago</p>
-                          </div>
-                          </a>
-                  
-                  </div>
-                  
-                      
-               </div>
-               <div class="pl-4 pt-5 relative h-44">
-                  <!--Image-->
-                  <a href="#"><img src="images/cards/Design.png"></a>
-                  <div class="absolute bg-black text-white -mt-7 text-sm ml-60 pr-1 pl-1 mr-7">54:48</div>
-                  <div class="flex mt-2">
-                         <!--text-->
-                         <div>
-                        <!-- PP image-->
-                         <img src="images/cards/Design-pp.png">
-                         </div>
-                         <a href="#">
-                         <div>
-                           <p class="text-gray-900 font-semibold ml-2 text-sm">Build in Figma -Create a system design component</p>
-                            <!--Smaller txt-->
-                            <p class="text-gray-500 font-semibold ml-2 text-sm mt-2">Figma</p>
-                            <p class="text-gray-500 font-semibold ml-2 text-sm">44k views. 4 months ago</p>
-                        </div>
-                        </a>
-                  
-                  </div>
-                  
-                      
-               </div>
-               <div class="pl-4 pt-5 relative h-44">
-                  <!--Image-->
-                  <a href="#"><img src="images/cards/Music.png"></a>
-                  <div class="absolute bg-black text-white -mt-7 text-sm ml-60 pr-1 pl-1">7:07</div>
-                  <div class="flex mt-2">
-                         <!--text-->
-                         <div>
-                        <!-- PP image-->
-                        <a href="#"><img src="images/cards/PP.png"></a>
-                         </div>
-                         <a href="#">
-                         <div>
-                             <p class="text-gray-900 font-semibold ml-2 text-sm">Zack Hemsey-"Vengenence"</p>
-                              <!--Smaller txt-->
-                              <div class="flex">
-                                 <p class="text-gray-500 font-semibold ml-2 text-sm mt-2">Zack Hemsey</p>
-                                 <img src="images/cards/Song.png" class="h-2.5 pl-1 mt-2.5">
-                               </div>
-                              <p class="text-gray-500 font-semibold ml-2 text-sm">21M view. 9years ago</p>
-                          </div>
-                          </a>
-                  
-                  </div>
-                  
-                      
-               </div>
-               <div class="pl-4 pt-5 relative h-44">
-                  <!--Image-->
-                  <a href="#"><img src="images/cards/Joker.png"></a>
-                  <div class="absolute bg-black text-white -mt-7 text-sm ml-60 pr-1 pl-1">2:03</div>
-                  <div class="flex mt-2">
-                         <!--text-->
-                         <div>
-                        <!-- PP image-->
-                         <img src="images/cards/Joker-PP.png">
-                         </div>
-                         <a href="#">
-                         <div>
-                             <p class="text-gray-900 font-semibold ml-2 text-sm">Who Am I- No system is safe Official Trailer #1 (2014)-Tom..</p>
-                              <!--Smaller txt-->
-                              <div class="flex">
-                                 <p class="text-gray-500 font-semibold ml-2 text-sm mt-2">Movieclips Trailers</p><img src="images/cards/Check.png" class="h-4 mt-2">
-                              </div>
-                              <p class="text-gray-500 font-semibold ml-2 text-sm">64M view. 6 years ago</p>
-                          </div>
-                          </a>
-                  
-                  </div>
-                  
-                      
-               </div>
-               <div class="pl-4 pt-5 relative h-44">
-                  <!--Image-->
-                  <a href="#"><img src="images/cards/Interstellar.png"></a>
-                  <div class="absolute bg-black text-white -mt-7 text-sm ml-60 pr-1 pl-1">10:13</div>
-                  <div class="flex mt-2">
-                         <!--text-->
-                         <div>
-                        <!-- PP image-->
-                         <img src="images/cards/Interstellar-PP.png">
-                         </div>
-                         <a href="#">
-                         <div>
-                             <p class="text-gray-900 font-semibold ml-2 text-sm">Interstellar Main theme-Hans Zimmer(Epic instrumental/piano..</p>
-                              <!--Smaller txt-->
-                              <div class="flex">
-                                 <p class="text-gray-500 font-semibold ml-2 text-sm mt-2">Jacob's Piano</p>
-                                 <img src="images/cards/Song.png" class="h-2.5 pl-1 mt-2.5">
-                               </div>
-                              <p class="text-gray-500 font-semibold ml-2 text-sm">11M view. 5 years ago</p>
-                          </div>
-                          </a>
-                  
-                  </div>
-                  
-                      
-               </div>
-               <div class="pl-4 pt-5 relative h-44">
-                  <!--Image-->
-                  <a href="#"><img src="images/cards/Thumbnail-Figma.png"></a>
-                  <div class="absolute bg-black text-white -mt-7 text-sm ml-60 pr-1 pl-1">7:11</div>
-                  <div class="flex mt-2">
-                         <!--text-->
-                         <div>
-                        <!-- PP image-->
-                        <a href="#"><img src="images/cards/Design-pp.png"></a>
-                         </div>
-                         <a href="#">
-                         <div>
-                             <p class="text-gray-900 font-semibold ml-2 text-sm">Figma Tutorial:DEvice Frames and Scrolling</p>
-                              <!--Smaller txt-->
-                              <p class="text-gray-500 font-semibold ml-2 text-sm mt-2">Figma</p>
-                              <p class="text-gray-500 font-semibold ml-2 text-sm">90k view. 1 month ago</p>
-                          </div>
-                          </a>
-                  </div>
-                  
-                      
-               </div>
-               <div class="pl-4 pt-5 relative h-44">
-                  <!--Image-->
-                  <a href="#"> <img src="images/cards/Batman Vs Superman.png"></a>
-                  <div class="absolute bg-black text-white -mt-7 text-sm ml-60 pr-1 pl-1">2:13</div>
-                  <div class="flex mt-2">
-                         <!--text-->
-                         <div>
-                        <!-- PP image-->
-                        <a href="#"><img src="images/cards/Batman-PP.png"></a>
-                         </div>
-                         <a href="#">
-                         <div>
-                             <p class="text-gray-900 font-semibold ml-2 text-sm">Batman vs Superman: Dawn of Justice Official Treaser Trailer #1</p>
-                              <!--Smaller txt-->
-                              <div class="flex">
-                                 <p class="text-gray-500 font-semibold ml-2 text-sm mt-2">Movieclips Trailers</p><img src="images/cards/Check.png" class="h-4 mt-2">
-                              </div>
-                              <p class="text-gray-500 font-semibold ml-2 text-sm">28M view. 6 years ago</p>
-                          </div>
-                          </a>
-                  
-                  </div>
-                  
-                      
-               </div>
-               <div class="pl-4 pt-5 relative h-44">
-                  <!--Image-->
-                  <a href="#"><img src="images/cards/Teaser.png"></a>
-                  <div class="absolute bg-black text-white -mt-7 text-sm ml-60 pr-1 pl-1">2:33</div>
-                  <div class="flex mt-2">
-                         <!--text-->
-                         <div>
-                        <!-- PP image-->
-                        <a href="#"><img src="images/cards/Joker-PP.png"></a>
-                         </div>
-                         <a href="#">
-                         <div>
-                             <p class="text-gray-900 font-semibold ml-2 text-sm">The Batman teaser trailer(2021) | Movieclips trailer</p>
-                             
-                          </div>
-                          </a>
-                  
-                  </div>
-                  
-                      
-               </div>
-               <div class="pl-4 pt-5 relative h-44">
-                  <!--Image-->
-                  <a href="#"><img src="images/cards/-music.png"></a>
-                  <div class="absolute bg-black text-white -mt-7 text-sm ml-60 pr-1 pl-1">15:10</div>
-                  <div class="flex mt-2">
-                         <!--text-->
-                         <div>
-                        <!-- PP image-->
-                        <a href="#"><img src="images/cards/Music-PP.png"></a>
-                         </div>
-                         <a href="#">
-                         <div>
-                             <p class="text-gray-900 font-semibold ml-2 text-sm">4 pieces by Yiruma | Relaxing Piano [15min]</p>
-                              <!--Smaller txt-->
-                             
-                          </div>
-                          </a>
-                  
-                  </div>
-                  
-                      
-               </div>
-               <div class="pl-4 pt-5 relative h-44">
-                  <!--Image-->
-                  <a href="#"><img src="images/cards/Dashboard.png"></a>
-                  <div class="absolute bg-black text-white -mt-7 text-sm ml-60 pr-1 pl-1">1:00</div>
-                  <div class="flex mt-2">
-                         <!--text-->
-                         <div>
-                        <!-- PP image-->
-                        <a href="#"><img src="images/cards/Design-pp.png"></a>
-                         </div>
-                         <a href="#">
-                         <div>
-                             <p class="text-gray-900 font-semibold ml-2 text-sm">Organizations admin Settings: Dashboard overview[1/7]</p>
-                          </div>
-                         </a>
-                  </div>
-                 
-                  
-                      
-               </div>
-               <div class="pl-4 pt-5 relative h-44">
-                  <!--Image-->
-                  <a href="#"><img src="images/cards/Music.png" ></a>
-                  <div class="absolute bg-black text-white -mt-7 text-sm ml-60 pr-1 pl-1">3:10</div>
-                  <div class="flex mt-2">
-                         <!--text-->
-                         <div>
-                        <!-- PP image-->
-                         <img src="images/cards/PP.png">
-                         </div>
-                         <a href="#">
-                         <div>
-                             <p class="text-gray-900 font-semibold ml-2 text-sm">Zack Hemsey-"Redemption"</p>
-                              
-                          </div>
-                          </a>
-                  
-                  </div>
-            </cards>
+   <head>
+      <title>Youtube clone</title>
+      <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,900&display=swap" rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet">
+   </head>
+   <body>
+      <header class="px-4 flex items-center justify-between">
+         <div class="flex items-center">
+               <a href="#"><i class="material-icons">menu</i></a>
+               <a href="#" class="ml-7 my-5"><img src="images/header/yt.svg" ></a>
          </div>
-         </section>
-         
-    </body>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+         <div class="search">
+            <form action="" method="" class="flex items-center mb-0">
+                  <input type="text" class="w-96 border border-gray-100 focus:outline-none pl-2 h-8" placeholder="Search">
+                  <button class="bg-gray-100 text-sm px-5 h-8"><i class="material-icons border-0 text-gray-600">search</i></button>
+            </form>
+         </div>
+         <div class="flex items-center space-x-5">
+            <a href="#"><img src="images/header/Create.svg"></a>
+            <a href="#" class="cursor-pointer"><i class="material-icons cursor-pointer" >notifications</i></a>
+            <a href="#" class="cursor-pointer"><i class="material-icons ">apps</i></a>
+            <a href="#"><img src="images/header/Profile Photo.svg" ></a>
+         </div>
+      </header>
+      <section class="flex">
+         <sidebar class="w-60 bg-white mt-5 text-sm">
+            <firstbar>
+               <a href="" class="w-full flex items-center hover:bg-gray-100 py-2">
+                  <i class="material-icons pl-4">home</i>
+                  <span class="pl-7 home">Home</span>
+               </a>
+               <a href="" class="w-full flex items-center hover:bg-gray-100 py-2">
+                  <img src="images/Trend.svg" class="pl-4">
+                  <span class="pl-7 home">Trending</span>
+               </a>
+               <a href="" class="w-full flex items-center hover:bg-gray-100 py-2">
+                  <i class="material-icons pl-4">subscriptions</i>
+                  <span class="pl-7 home">Subscriptions</span>
+               </a>
+            </firstbar>
+            <div class="w-full my-3 border-t border-gray-300"></div>
+            <secondbar>
+               <a href="" class="w-full flex items-center hover:bg-gray-100 py-2">
+                  <!--<i class="material-icons pl-4">Videos</i>-->
+                  <img src="images/Sidebar/Library/Icon/Library/Default.svg" class="pl-4">
+                  <span class="pl-7 home">Library</span>
+               </a>
+               <a href="" class="w-full flex items-center hover:bg-gray-100 py-2">
+                  <img src="images/Sidebar/History.svg" class="pl-4">
+                  <span class="pl-7 home">History</span>
+               </a>
+               <a href="" class="w-full flex items-center hover:bg-gray-100 py-2">
+                  <img src="images/Sidebar/Your-Videos/Icon/Your-Videos/Default.svg" class="pl-4">
+                  <span class="pl-7 home">Your videos</span>
+               </a>
+               <a href="" class="w-full flex items-center hover:bg-gray-100 py-2">
+                  <img src="images/Sidebar/Watch-Later/Icon/Watch-Later/Default.svg" class="pl-4">
+                  <span class="pl-7 home">Watch Later</span>
+               </a>
+               <a href="" class="w-full flex items-center hover:bg-gray-100 py-2">
+                  <img src="images/Sidebar/Liked-Videos/Icon/Liked-Videos/Default.svg" class="pl-4">
+                  <span class="pl-7 home">Your videos</span>
+               </a>
+            </secondbar>
+            <div class="w-full my-3 border-t border-gray-300"></div>
+            <thirdbar>
+               <p class="pl-4 text-gray-500 font-medium pt-1 pb-3 uppercase">Subscriptions</p>
+               <a href="" class="w-full flex items-center hover:bg-gray-100 py-2">
+                  <img src="images/profile/Oktak.png" class="pl-4">
+                  <span class="pl-7 home">Oktay Candan</span>
+               </a>
+               <a href="" class="w-full flex items-center hover:bg-gray-100 py-2">
+                  <img src="images/profile/Profile Photo.png" class="pl-4">
+                  <span class="pl-7 home">Arnold Morrison</span>
+               </a>
+               <a href="" class="w-full flex items-center hover:bg-gray-100 py-2">
+                 <img src="images/profile/Ferdi Cildiz.png" class="pl-4">
+                  <span class="pl-7 home">Hudson Snyder</span>
+               </a>
+               <a href="" class="w-full flex items-center hover:bg-gray-100 py-2">
+                  <img src="images/profile/Thomas Burns.png" class="pl-4">
+                  <span class="pl-7 home">Thomas Burns</span>
+               </a>
+               <a href="" class="w-full flex items-center hover:bg-gray-100 py-2">
+                  <img src="images/profile/BrowseChannels.png" class="pl-4">
+                  <span class="pl-7 home">Browse Channels</span>
+               </a>
+            </thirdbar>
+            <div class="w-full my-3 border-t border-gray-300"></div>
+            <firstbar>
+               <p class="pl-4 text-gray-500 font-medium pt-1 pb-3 uppercase">More frome youtube</p>
+               <a href="" class="w-full flex items-center hover:bg-gray-100 py-2">
+                  <img src="images/Sidebar/Icon/Youtube.svg" class="pl-4">
+                  <span class="pl-7 home">Youtube premium</span>
+               </a>
+               <a href="" class="w-full flex items-center hover:bg-gray-100 py-2">
+                  <img src="images/Sidebar/Icon/Gaming.svg" class="pl-4">
+                  <span class="pl-7 home">Gaming</span>
+               </a>
+               <a href="" class="w-full flex items-center hover:bg-gray-100 py-2">
+                  <img src="images/Sidebar/Icon/Live.svg" class="pl-4">
+                  <span class="pl-7 home">Live</span>
+               </a>
+            </firstbar>
+            <div class="w-full my-3 border-t border-gray-300"></div>
+            <lastbar>
+               <a href="" class="w-full flex items-center hover:bg-gray-100 py-2">
+                  <img src="images/Sidebar/Icon/Settings.svg" class="pl-4">
+                  <span class="pl-7 home">Settings</span>
+               </a>
+               <a href="" class="w-full flex items-center hover:bg-gray-100 py-2">
+                  <img src="images/Sidebar/Icon/Report.svg" class="pl-4">
+                  <span class="pl-7 home">Report History</span>
+               </a>
+               <a href="" class="w-full flex items-center hover:bg-gray-100 py-2">
+                  <img src="images/Sidebar/Icon/Help.svg" class="pl-4">
+                  <span class="pl-7 home">Help</span>
+               </a>
+               <a href="" class="w-full flex items-center hover:bg-gray-100 py-2">
+                  <img src="images/Sidebar/Icon/Feedback.svg" class="pl-4">
+                  <span class="pl-7 home">Send Feedback</span>
+               </a>
+            </lastbar>
+            <div class="w-full my-3 border-t border-gray-300"></div>
+            <p class="text-gray-500 text-sm font-normal pl-4 py-3">&copy; 2020 Google LLC</p>
+         </sidebar>
+
+         <div class="w-full mt-3 videos">
+               <div class="grid grid-cols-4 gap-7">
+                  
+                     <div class="relative">
+                     <a href="#"><img src="images/cards/Thumbnail.png"></a>
+                     <div class="absolute bg-black text-white -mt-40 py-14 px-9 ml-44 bg-opacity-70">
+                        <p>50+</p>
+                        <a href="#"><img src="images/cards/Play.png"></a>
+                     </div>
+                     <a href="#"><p class="font-medium">My mix</p></a>
+                     <a href="#"><p class="font-light">Hans Zimmer and more</p></a>
+                     </div>
+                  
+                  
+                     <div class="relative">
+                       <a href="#"><img src="images/cards/Music.png"></a>
+                       <div class="absolute bg-black text-white -mt-7 px-1 ml-56">
+                        <p>7:07</p>
+                       </div>
+                     <div class="flex mt-3 gap-4">
+                        <img src="images/cards/PP.png" class="h-9">
+                        <div>
+                           <a href="#"><p class="font-medium">Zack Hemsey-"The Way"</p></a>
+                           <a href="#"><p class="font-extralight flex">Zack Hemsey <img src="images/cards/Song.png" class="h-4 mt-1"></p></a>
+                           <a href="#"><p class="font-extralight">64M views . 9 years ago</p></a>
+                        </div>
+                     </div>
+                    </div>
+                    <div class="relative">
+                     <a href="#"><img src="images/cards/Design.png"></a>
+                     <div class="absolute bg-black text-white -mt-7 px-1 ml-56">
+                      <p>7:07</p>
+                     </div>
+                   <div class="flex mt-3 gap-4">
+                      <img src="images/cards/Design-pp.png" class="h-9">
+                      <div>
+                         <a href="#"><p class="font-medium">Build it in Figmal create a design system-Components</p></a>
+                         <a href="#"><p class="font-extralight flex">Figma</p></a>
+                         <a href="#"><p class="font-extralight">16k views . 2 months ago</p></a>
+                      </div>
+                   </div>
+                  </div>
+                  <div class="relative">
+                     <a href="#"><img src="images/cards/-music.png"></a>
+                     <div class="absolute bg-black text-white -mt-7 px-1 ml-56">
+                      <p>10:13</p>
+                     </div>
+                   <div class="flex mt-3 gap-4">
+                      <img src="images/cards/Music-PP.png" class="h-9">
+                      <div>
+                         <a href="#"><p class="font-medium">4 minute beautiful soundtrack | Relaxing piano[10min]</p></a>
+                         <a href="#"><p class="font-extralight flex">Jacob's Piano <img src="images/cards/Song.png" class="h-4 mt-1"></p></a>
+                         <a href="#"><p class="font-extralight">63M views . 4 years ago</p></a>
+                      </div>
+                   </div>
+                  </div>
+                  <div class="relative">
+                     <a href="#"><img src="images/cards/Thumbnail-Music.png"></a>
+                     <div class="absolute bg-black text-white -mt-7 px-1 ml-56">
+                      <p>24:45</p>
+                     </div>
+                   <div class="flex mt-3 gap-4">
+                      <img src="images/cards/Design-pp.png" class="h-9">
+                      <div>
+                         <a href="#"><p class="font-medium">Config Europe 2020-keynote Dylan Field- Embracing tension bet...</p></a>
+                         <a href="#"><p class="font-extralight flex">Figma <img src="images/cards/Song.png" class="h-4 mt-1"></p></a>
+                         <a href="#"><p class="font-extralight">27k views . 1 month ago</p></a>
+                      </div>
+                   </div>
+                  </div>
+                  <div class="relative">
+                     <a href="#"><img src="images/cards/Batman.png"></a>
+                     <div class="absolute bg-black text-white -mt-7 px-1 ml-56">
+                      <p>3:03</p>
+                     </div>
+                   <div class="flex mt-3 gap-4">
+                      <img src="images/cards/Joker-PP.png" class="h-9">
+                      <div>
+                         <a href="#"><p class="font-medium">The Dark knight rises(2012)-Batman's sacrifice scene(9/10)..</p></a>
+                         <a href="#"><p class="font-extralight flex">Movieclip trailers<img src="images/cards/Check.png" class="h-4 mt-1"></p></a>
+                         <a href="#"><p class="font-extralight">10M views . 3 years ago</p></a>
+                      </div>
+                   </div>
+                  </div>
+                  <div class="relative">
+                     <a href="#"><img src="images/cards/Design.png"></a>
+                     <div class="absolute bg-black text-white -mt-7 px-1 ml-56">
+                      <p>54:58</p>
+                     </div>
+                   <div class="flex mt-3 gap-4">
+                      <img src="images/cards/Design-pp.png" class="h-9">
+                      <div>
+                         <a href="#"><p class="font-medium">Build it in Figmal create a design system-Foundation</p></a>
+                         <a href="#"><p class="font-extralight flex">Figma</p></a>
+                         <a href="#"><p class="font-extralight">44k views . 4 months ago</p></a>
+                      </div>
+                   </div>
+                  </div>
+                 
+                  
+                  <div class="relative">
+                     <a href="#"><img src="images/cards/Music.png"></a>
+                     <div class="absolute bg-black text-white -mt-7 px-1 ml-56">
+                      <p>7:07</p>
+                     </div>
+                   <div class="flex mt-3 gap-4">
+                      <img src="images/cards/PP.png" class="h-9">
+                      <div>
+                         <a href="#"><p class="font-medium">Zack Hemsey-"Vegeance"</p></a>
+                         <a href="#"><p class="font-extralight flex">Zack Hemsey <img src="images/cards/Song.png" class="h-4 mt-1"></p></a>
+                         <a href="#"><p class="font-extralight">21M views . 9 years ago</p></a>
+                      </div>
+                   </div>
+                  </div>
+                  <div class="relative">
+                     <a href="#"><img src="images/cards/Joker.png"></a>
+                     <div class="absolute bg-black text-white -mt-7 px-1 ml-56">
+                      <p>2:03</p>
+                     </div>
+                   <div class="flex mt-3 gap-4">
+                      <img src="images/cards/Joker-PP.png" class="h-9">
+                      <div>
+                         <a href="#"><p class="font-medium">Who Am I-Why No system is safe Official Trailer #1 (2014)  Tom..</p></a>
+                         <a href="#"><p class="font-extralight flex">Movieclip Trailers <img src="images/cards/Check.png" class="h-4 mt-1"></p></a>
+                         <a href="#"><p class="font-extralight">64M views . 6 years ago</p></a>
+                      </div>
+                   </div>
+                  </div>
+                  <div class="relative">
+                     <a href="#"><img src="images/cards/Interstellar.png"></a>
+                     <div class="absolute bg-black text-white -mt-7 px-1 ml-56">
+                      <p>10:13</p>
+                     </div>
+                   <div class="flex mt-3 gap-4">
+                      <img src="images/cards/Interstellar-PP.png" class="h-9">
+                      <div>
+                         <a href="#"><p class="font-medium">Interstellar Main Theme-Hans Zimmer (epic instrumental/piano..</p></a>
+                         <a href="#"><p class="font-extralight flex">Jacob's Piano <img src="images/cards/Song.png" class="h-4 mt-1"></p></a>
+                         <a href="#"><p class="font-extralight">11M views . 5 years ago</p></a>
+                      </div>
+                   </div>
+                  </div>
+                  <div class="relative">
+                     <a href="#"><img src="images/cards/Thumbnail-Figma.png"></a>
+                     <div class="absolute bg-black text-white -mt-7 px-1 ml-56">
+                      <p>7:11</p>
+                     </div>
+                   <div class="flex mt-3 gap-4">
+                      <img src="images/cards/Design-pp.png" class="h-9">
+                      <div>
+                         <a href="#"><p class="font-medium">Figma Tutorial: Device frames and scrolling</p></a>
+                         <a href="#"><p class="font-extralight flex">Figma</p></a>
+                         <a href="#"><p class="font-extralight">90kviews . 1 months ago</p></a>
+                      </div>
+                   </div>
+                  </div>
+                  <div class="relative">
+                     <a href="#"><img src="images/cards/Batman Vs Superman.png"></a>
+                     <div class="absolute bg-black text-white -mt-7 px-1 ml-56">
+                      <p>2:13</p>
+                     </div>
+                   <div class="flex mt-3 gap-4">
+                      <img src="images/cards/Joker-PP.png" class="h-9">
+                      <div>
+                         <a href="#"><p class="font-medium">Batman vs Superman:Dawn of Justice Official Teaser Trailer #1..</p></a>
+                         <a href="#"><p class="font-extralight flex">Movieclip Trailers <img src="images/cards/Check.png" class="h-4 mt-1"></p></a>
+                         <a href="#"><p class="font-extralight">28M views . 6 years ago</p></a>
+                      </div>
+                   </div>
+                  </div>
+                  <div class="relative">
+                     <a href="#"><img src="images/cards/Teaser.png"></a>
+                     <div class="absolute bg-black text-white -mt-7 px-1 ml-56">
+                      <p>2:33</p>
+                     </div>
+                   <div class="flex mt-3 gap-4">
+                      <img src="images/cards/Joker-PP.png" class="h-9">
+                      <div>
+                         <a href="#"><p class="font-medium">The Batman Teaser Trailer 2021| Movieclip Trailers</p></a>
+                         
+                      </div>
+                   </div>
+                  </div>
+                  <div class="relative">
+                     <a href="#"><img src="images/cards/Music-piano.png"></a>
+                     <div class="absolute bg-black text-white -mt-7 px-1 ml-56">
+                      <p>15:10</p>
+                     </div>
+                   <div class="flex mt-3 gap-4">
+                      <img src="images/cards/Music-PP.png" class="h-9">
+                      <div>
+                         <a href="#"><p class="font-medium">4 pieces by Yiruma | Relaxing piano [15 Min]</p></a>
+                         
+                      </div>
+                   </div>
+                  </div>
+                  <div class="relative">
+                     <a href="#"><img src="images/cards/Dashboard.png"></a>
+                     <div class="absolute bg-black text-white -mt-7 px-1 ml-56">
+                      <p>2:03</p>
+                     </div>
+                   <div class="flex mt-3 gap-4">
+                      <img src="images/cards/Design-pp.png" class="h-9">
+                      <div>
+                         <a href="#"><p class="font-medium">Organization Admin Settings: Dashboard Overview[1/7]</p></a>
+                         
+                      </div>
+                   </div>
+                  </div>
+                  <div class="relative">
+                     <a href="#"><img src="images/cards/Music.png"></a>
+                     <div class="absolute bg-black text-white -mt-7 px-1 ml-56">
+                      <p>2:03</p>
+                     </div>
+                   <div class="flex mt-3 gap-4">
+                      <img src="images/cards/Music-PP.png" class="h-9">
+                      <div>
+                         <a href="#"><p class="font-medium">Zack Hemsey-"Redemption"</p></a>
+                         
+                      </div>
+                   </div>
+                  </div>
+                 
+                   
+                  
+                  
+                  
+                  
+                 
+
+                     
+                     
+                      
+                        
+                     
+               
+                  
+                  
+                  
+                 
+                 
+               </div>
+                     
+                     
+                  
+               
+         </div>
+      </section>
+        
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+   </body>
 </html>
