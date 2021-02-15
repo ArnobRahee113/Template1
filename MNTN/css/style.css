@@ -1,0 +1,48 @@
+body{
+    font-family: 'Gilroy';
+}
+a:hover{
+    color:#FBD784;
+}
+.vertical{
+    writing-mode: vertical-rl; 
+}
+.theme-colortxt{
+    color: #FBD784;
+}
+.theme-colorbackground{
+    background-color: #FBD784;
+}
+.chronical{
+    font-family: 'Chronicle Display', sans-serif;
+                                                
+}
+.text-7{
+    font-size:40px;
+    line-height:4rem;
+}
+.pr-98{
+    padding-right: 26rem;
+}
+.-mt-96{
+    margin-top: -585px;
+}
+.bodyColor{
+    background-color: #0B1D26;
+}
+.w-98{
+    width:34rem;
+}
+
+-z{
+    z-index: -1;
+}
+.listColor{
+    color: rgb(37,57,61);
+}
+.mr-100{
+    margin-right: 39rem;
+}
+.-ml-85{
+margin-left:-1rem;
+}
